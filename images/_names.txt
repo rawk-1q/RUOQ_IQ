@@ -1,0 +1,106 @@
+الملف	الصنف
+affogato.webp	أفوكاتو
+americano.webp	أمريكانو
+choco-coffee.webp	قهوة جكليتية
+citrus-mix.webp	مكس حمضيات
+crepe.webp	كريب نوتيلا
+cup-blue.webp	-
+cup-red.webp	-
+espresso.webp	اسبريسو
+freddo.webp	فريدو
+french-coffee.webp	قهوة فرنسية
+hot-choc.webp	هوت شوكليت
+img-001.png	-
+img-025.webp	أمريكانو بارد
+img-026.webp	مارتيني
+img-027.webp	لاتيه بارد بستاشيو
+img-028.webp	لاتيه بارد لافندر
+img-029.webp	لاتيه بارد كراميل
+img-030.webp	لاتيه بارد فانيلا
+img-031.webp	سبانش لاتيه بارد
+img-032.webp	سكنجر لاتيه بارد
+img-033.webp	موكا بارد وايت
+img-034.webp	موكا بارد دارك
+img-035.webp	ايس تي ليمون
+img-036.webp	ايس تي خوخ
+img-037.webp	ايس تي فراولة
+img-038.webp	ايس تي كركديه
+img-039.webp	فرابيه فانيلا
+img-040.webp	فرابيه كراميل
+img-041.webp	فرابيه بستاشيو
+img-042.webp	فرابيه موكا
+img-043.webp	مكس استوائي
+img-044.webp	سموذي منكا
+img-045.webp	سموذي رمان
+img-046.webp	سموذي اناناس
+img-047.webp	سموذي باشن فروت
+img-048.webp	برتقال طبيعي
+img-049.webp	اناناس طبيعي
+img-050.webp	موز وحليب
+img-051.webp	ليمون ونعناع
+img-052.webp	فراولة
+img-053.webp	ميلك شيك فراولة
+img-054.webp	ميلك شيك بلوبيري
+img-055.webp	ميلك شيك فانيلا
+img-056.webp	ميلك شيك منكا
+img-057.webp	ميلك شيك نوتيلا
+img-058.webp	ميلك شيك بستاشيو
+img-059.webp	موهيتو ليمون ونعناع
+img-060.webp	موهيتو مكس بيري
+img-061.webp	موهيتو بلو
+img-063.webp	كريب لوتس
+img-064.webp	كريب أوريو
+img-065.webp	كريب فواكه
+img-066.webp	كريب فستق
+img-067.webp	كريب مكسرات
+img-068.webp	كريب ماجك رول
+img-069.webp	كريب سوشي
+img-070.webp	كريب فوتوشيني
+img-071.webp	ماتشا بيور
+img-072.webp	ماتشا لاتيه
+img-073.webp	ماتشا فراولة
+img-074.webp	ماتشا فانيلا
+img-075.webp	ماتشا لافندر
+img-076.webp	روق سكنجر ماتشا
+img-077.webp	تيراميسو
+img-078.webp	كيكة بالشوكولاتة
+img-079.webp	كرواسون
+img-080.webp	كيكة يابانية
+img-081.webp	براونيز بالأيسكريم
+img-082.webp	تشيز كيك
+img-083.webp	كوكيز
+img-084.webp	سان سبستيان كيك
+img-085.webp	V60 بارد
+img-086.webp	V60 حار
+img-087.webp	V60 محصول فاخر (Premium Crop)
+img-088.webp	كيمكس
+img-089.webp	كولد برو
+img-094.webp	وافل نوتيلا
+img-095.webp	وافل أوريو
+img-096.webp	وافل أيسكريم
+img-097.webp	وافل فواكه
+img-098.webp	بودنق چوكلت
+img-099.webp	تراميسو لاتيه
+img-100.webp	هوت شوكليت بالمارشميلو
+img-101.webp	مولتن سوفت شوكلت
+img-104.webp	كوب روق
+karak.webp	شاي كرك
+latte-cup.webp	سبانش لاتيه / فلات وايت / كابتشينو / نسكافيه
+lemon-tea.webp	شاي ليمون
+macchiato.webp	ماكياتو
+mini-pancake.webp	ميني بان كيك
+mix-rouq.webp	مكس روق (فوتشيني كريب مع مشروب)
+mocha-dark.webp	موكا دارك
+mocha-white.webp	موكا وايت
+mojito-energy.webp	موهيتو طاقة
+mojito-pomeg.webp	موهيتو رمان
+mojito-straw.webp	موهيتو فراولة
+nutella-coffee.webp	قهوة نوتيلا
+pancake-fruit.webp	بان كيك فواكه
+pancake-nutella.webp	بان كيك نوتيلا
+pistachio-latte.webp	لاتيه بستاشيو
+shop-bags.webp	-
+tea.webp	شاي
+turkish.webp	قهوة بالبندق / قهوة تركية
+vanilla-latte.webp	سكنجر لاتيه / لاتيه بندق / لاتيه فانيلا / لاتيه كراميل
+waffle.webp	وافل فستق / وافل مكسرات
