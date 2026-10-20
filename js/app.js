@@ -59,6 +59,7 @@ const MOJITO_STRAW_IMG = 'images/mojito-straw.webp';
 const MOJITO_POMEG_IMG = 'images/mojito-pomeg.webp';
 const hot = [
   {n:'اسبريسو', p:2500, cal:5, photo:true, img:ESPRESSO_IMG},
+  {n:'اسبريسو دبل', p:3500, photo:true, img:ESPRESSO_IMG},
   {n:'أمريكانو', p:3500, cal:10, photo:true, img:AMERICANO_IMG},
   {n:'فريدو', p:3500, cal:90, photo:true, img:FREDDO_IMG},
   {n:'أفوكاتو', p:4000, cal:200, photo:true, img:AFFOGATO_IMG},
@@ -71,6 +72,7 @@ const hot = [
   {n:'لاتيه فانيلا', p:4000, cal:220, photo:true, img:VANILLA_LATTE_IMG},
   {n:'لاتيه كراميل', p:4000, cal:250, photo:true, img:VANILLA_LATTE_IMG},
   {n:'لاتيه بستاشيو', p:4000, cal:250, photo:true, img:PISTACHIO_LATTE_IMG},
+  {n:'تراميسو لاتيه', p:4500, photo:true, full:true, img:'images/img-099.webp'},
   {n:'نسكافيه', p:3500, cal:90, photo:true, img:LATTE_CUP_IMG},
   {n:'موكا دارك', p:4000, cal:270, photo:true, img:MOCHA_DARK_IMG},
   {n:'موكا وايت', p:4000, cal:310, photo:true, img:MOCHA_WHITE_IMG},
@@ -78,6 +80,7 @@ const hot = [
   {n:'قهوة تركية', p:2000, cal:30, photo:true, img:TURKISH_IMG, optLabel:'اختر السكر', hidePrices:true, sizes:[{l:'سادة', p:2000},{l:'وسط', p:2000},{l:'حلوى', p:2000}]},
   {n:'قهوة جكليتية', p:2000, cal:180, photo:true, img:CHOCO_COFFEE_IMG, optLabel:'اختر السكر', hidePrices:true, sizes:[{l:'سادة', p:2000},{l:'وسط', p:2000},{l:'حلو', p:2000}]},
   {n:'هوت شوكليت', p:3500, cal:300, photo:true, img:HOT_CHOC_IMG},
+  {n:'هوت شوكليت بالمارشميلو', p:4500, photo:true, full:true, img:'images/img-100.webp'},
   {n:'قهوة بالبندق', p:2500, cal:160, photo:true, img:TURKISH_IMG, optLabel:'اختر السكر', hidePrices:true, sizes:[{l:'سادة', p:2500},{l:'وسط', p:2500},{l:'حلو', p:2500}]},
   {n:'قهوة نوتيلا', p:2500, cal:220, photo:true, img:NUTELLA_COFFEE_IMG},
   {n:'شاي', p:1000, cal:30, photo:true, img:TEA_IMG},
@@ -87,12 +90,12 @@ const hot = [
 const cold = [
   {n:'أمريكانو بارد', p:3500, cal:10, photo:true, full:true, img:'images/img-025.webp'},
   {n:'مارتيني', p:4000, cal:150, photo:true, full:true, img:'images/img-026.webp'},
-  {n:'لاتيه بارد بستاشيو', p:4500, cal:250, photo:true, full:true, img:'images/img-027.webp'},
-  {n:'لاتيه بارد لافندر', p:4000, cal:210, photo:true, full:true, img:'images/img-028.webp'},
-  {n:'لاتيه بارد كراميل', p:4000, cal:250, photo:true, full:true, img:'images/img-029.webp'},
-  {n:'لاتيه بارد فانيلا', p:4000, cal:220, photo:true, full:true, img:'images/img-030.webp'},
-  {n:'سبانش لاتيه بارد', p:4500, cal:250, photo:true, img:'images/img-031.webp'},
-  {n:'سكنجر لاتيه بارد', p:5000, cal:280, photo:true, full:true, img:'images/img-032.webp'},
+  {n:'لاتيه بارد بستاشيو', p:4500, cal:250, photo:true, full:true, img:'images/img-027.webp', optLabel:'اختر الحجم', sizes:[{l:'صغير', p:4500},{l:'كبير', p:5500}]},
+  {n:'لاتيه بارد لافندر', p:4000, cal:210, photo:true, full:true, img:'images/img-028.webp', optLabel:'اختر الحجم', sizes:[{l:'صغير', p:4000},{l:'كبير', p:5000}]},
+  {n:'لاتيه بارد كراميل', p:4000, cal:250, photo:true, full:true, img:'images/img-029.webp', optLabel:'اختر الحجم', sizes:[{l:'صغير', p:4000},{l:'كبير', p:5000}]},
+  {n:'لاتيه بارد فانيلا', p:4000, cal:220, photo:true, full:true, img:'images/img-030.webp', optLabel:'اختر الحجم', sizes:[{l:'صغير', p:4000},{l:'كبير', p:5000}]},
+  {n:'سبانش لاتيه بارد', p:4500, cal:250, photo:true, img:'images/img-031.webp', optLabel:'اختر الحجم', sizes:[{l:'صغير', p:4500},{l:'كبير', p:5500}]},
+  {n:'سكنجر لاتيه بارد', p:5000, cal:280, photo:true, full:true, img:'images/img-032.webp', optLabel:'اختر الحجم', sizes:[{l:'صغير', p:5000},{l:'كبير', p:6000}]},
   {n:'موكا بارد وايت', p:4000, cal:310, photo:true, full:true, img:'images/img-033.webp'},
   {n:'موكا بارد دارك', p:4000, cal:270, photo:true, full:true, img:'images/img-034.webp'},
   {n:'ايس تي ليمون', p:4000, cal:90, photo:true, full:true, img:'images/img-035.webp'},
@@ -157,6 +160,8 @@ const cakes = [
   {n:'تشيز كيك', p:4000, cal:400, photo:true, img:'images/img-082.webp'},
   {n:'كوكيز', p:2000, cal:200, optLabel:'اختر النوع', sizes:[{l:'كلاسك', p:2000},{l:'محشي نوتيلا', p:2000}], photo:true, img:'images/img-083.webp'},
   {n:'سان سبستيان كيك', p:5000, cal:430, photo:true, img:'images/img-084.webp'},
+  {n:'بودنق چوكلت', p:4500, photo:true, full:true, img:'images/img-098.webp'},
+  {n:'مولتن سوفت شوكلت', p:4000, photo:true, full:true, img:'images/img-101.webp'},
 ];
 const CROPS = [
   {n:'إثيوبي مزيج', notes:'شوكولاتة · كراميل · حلاوة هادئة'},
@@ -195,6 +200,7 @@ const water = [
   {n:'مياه غازية', p:1000, img:bottleSVG('#6fc0d8')},
 ];
 const CATEGORIES = [
+  {key:'all', label:'الكل', items:[]},
   {key:'hot', label:'المشروبات الساخنة', items:hot},
   {key:'cold', label:'المشروبات الباردة', items:cold},
   {key:'specialty', label:'القهوة المختصة', items:specialty},
@@ -204,6 +210,7 @@ const CATEGORIES = [
   {key:'cake', label:'الحلى', items:cakes},
   {key:'water', label:'الماء', items:water},
 ];
+CATEGORIES[0].items = CATEGORIES.slice(1).flatMap(c=>c.items);   // 'الكل' = every item from every section
 let activeCat = 'hot';
 
 const FAQS = [
@@ -328,6 +335,13 @@ function renderEstore(){
       </div>
     </div>
     ${closedNotice()}
+    <div class="browse-wrap">
+      <button type="button" class="browse-btn" id="browseMenuBtn">
+        <span class="browse-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+        <span class="browse-txt">تصفح المنيو</span>
+        <span class="browse-go">${chevIcon()}</span>
+      </button>
+    </div>
     <div class="section-title">منتجات المتجر الإلكتروني</div>
     <div class="shop">
       <div class="shop-card wide tap" id="cupCard">
@@ -340,6 +354,7 @@ function renderEstore(){
       </div>
     </div>
   ` + '</div>';
+  document.getElementById('browseMenuBtn').addEventListener('click', ()=>{ activeCat='all'; searchOpen=false; searchQ=''; goTo('menu'); });
   document.getElementById('cupCard').addEventListener('click', ()=>openSheet(CUP_ITEM));
   document.getElementById('beansCard').addEventListener('click', ()=>openSheet(BEANS_ITEM));
   initBanner();
@@ -365,9 +380,24 @@ function fillMenuGrid(){
   const cat = CATEGORIES.find(c=>c.key===activeCat);
   const grid = document.getElementById('menuGrid');
   const q = normAr(searchQ);
-  const list = q ? CATEGORIES.flatMap(c=>c.items).filter(it=>normAr(it.n).includes(q)) : cat.items;
+  const sections = CATEGORIES.filter(c=>c.key!=='all');
+  let list, body;
+  if(q){
+    list = sections.flatMap(c=>c.items).filter(it=>normAr(it.n).includes(q));
+    body = list.map(menuCardHTML).join('');
+  } else if(cat.key==='all'){
+    list = []; body = '';
+    sections.forEach(c=>{
+      if(!c.items.length) return;
+      body += `<div class="grid-head">${c.label}</div>`;
+      c.items.forEach(it=>{ body += menuCardHTML(it, list.length); list.push(it); });
+    });
+  } else {
+    list = cat.items;
+    body = list.map(menuCardHTML).join('');
+  }
   const emptyMsg = q ? 'ما لقينا نتائج لبحثك' : 'لا توجد منتجات في هذا القسم حالياً';
-  grid.innerHTML = (list.length ? '' : `<div class="placeholder" style="grid-column:1/-1; padding:70px 20px;">${emptyMsg}</div>`) + list.map(menuCardHTML).join('');
+  grid.innerHTML = (list.length ? '' : `<div class="placeholder" style="grid-column:1/-1; padding:70px 20px;">${emptyMsg}</div>`) + body;
   grid.querySelectorAll('.card').forEach(c=>{
     c.addEventListener('click', ()=>{
       const it = list[parseInt(c.dataset.idx)];
@@ -381,7 +411,7 @@ function renderMenu(){
   screenEl.innerHTML = '<div class="screen-inner">' + `
     <div class="menu-topbar">
       <span class="chev-btn">${chevIcon()}</span>
-      <div class="title">${cat.label}</div>
+      <div class="title">${cat.key==='all'?'المنيو':cat.label}</div>
       <span class="chev-btn" id="searchBtn" role="button" aria-label="بحث" style="cursor:pointer">${searchIcon}</span>
     </div>
     ${closedNotice()}

@@ -639,3 +639,17 @@
   /* no-JS fallback navigation */
   .sv{display:none} .sv:target{display:block} .sv:target ~ #sv-estore{display:none} #sv-estore{display:block}
   .navitem{position:relative} .nvl{position:absolute;top:0;right:0;bottom:0;left:0;z-index:2;-webkit-tap-highlight-color:transparent}
+
+/* browse-menu button (home) + "الكل" section headings */
+.browse-wrap{ padding:4px 20px 6px; }
+.browse-btn{ display:flex; align-items:center; gap:12px; width:100%; border:none; cursor:pointer; font-family:inherit; color:#F1E7D8;
+  background:linear-gradient(135deg,#9a4a31,#873D27 55%,#6e2f1c); border-radius:22px; padding:14px 16px; box-shadow:0 8px 20px rgba(135,61,39,.28);
+  transition:transform .15s ease, box-shadow .15s ease; }
+.browse-btn:active{ transform:scale(.975); }
+.browse-ic{ flex:none; display:flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:50%; background:rgba(241,231,216,.16); }
+.browse-txt{ flex:1; text-align:right; font-size:17px; font-weight:800; }
+.browse-go{ flex:none; width:34px; height:34px; border-radius:50%; background:rgba(241,231,216,.96); display:flex; align-items:center; justify-content:center; }
+.browse-go svg{ width:16px; height:16px; }
+.grid-head{ grid-column:1 / -1; display:flex; align-items:center; gap:10px; font-size:17px; font-weight:800; color:#873D27; padding:16px 2px 2px; }
+.grid-head::before{ content:''; width:5px; height:20px; border-radius:3px; background:#873D27; flex:none; }
+.grid-head::after{ content:''; flex:1; height:1px; background:#DCCDB6; }
